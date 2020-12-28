@@ -72,16 +72,7 @@ const data = [
 	},
 	{
     name: 'Page W', uv: 3490, pv: 4900, amt: 2600,
-	},
-	{
-    name: 'Page X', uv: 3490, pv: 4950, amt: 2500,
-	},
-	{
-    name: 'Page y', uv: 3490, pv: 4100, amt: 2300,
-	},
-	{
-    name: 'Page z', uv: 3490, pv: 4300, amt: 200,
-  },
+	}
 ];
 
  class BarchartComponent extends PureComponent {
