@@ -15,9 +15,9 @@ const Sidebar = () => {
 				<hr />
 			</div>
 			<div className="list-group list-group-flush pb-4">
-				<li className="list-group-item">
+				<span className="pl-4 menu">
 					Menu
-				</li>
+				</span>
 				<a href="#" className="list-group-item list-group-item-action">
 					<i className="fas fa-at"></i>
 					<span className="pl-2">	Inbox </span>
@@ -47,10 +47,17 @@ const Sidebar = () => {
 					<span className="pl-2">	Settings</span>
 				</a>
 			</div>
-			<div className = "p-4">
-				<Button size = "sm" variant="primary">
-					Upgrade Plan
-				</Button>
+			<div className = "footer w-100 pr-4">
+				<div className = "pt-4 pl-4 pb-2">
+					<Button size = "sm" className = "w-100" variant="primary">
+						Upgrade Plan
+					</Button>
+				</div>
+				<div className = "pl-4 pb-4">
+					<button variant="none" className = "w-100 support-btn">
+						Contact Support
+					</button>
+				</div>
 			</div>
 		</div>
 	)

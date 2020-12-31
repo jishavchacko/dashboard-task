@@ -15,10 +15,17 @@ const Content = () => {
 	return (
 		<div id="page-content-wrapper">
 			<div className="container-fluid">
-				<h4 className="mt-4">Overview</h4>
-				<hr />
+				<div className = "pt-4 w-100">
+					<h4 className="mt-4 head-title">
+						Overview
+						<span className="float-right">
+							<i className="fas fa-ellipsis-v"></i>
+						</span>
+					</h4>
+					<hr />
+				</div>	
 				<Barchart />
-				<div className = "pt-3">
+				<div className = "pt-5">
 					<Table hover responsive size="sm">
 						<thead>
 							<tr>
@@ -43,9 +50,9 @@ const Content = () => {
 											{
 												(item.status == "pause")
 												?
-													<Badge variant="warning">Pause</Badge>
+													<Badge variant="warning" className="w-50">Paused</Badge>
 												:
-													<Badge variant="primary">Active</Badge>
+													<Badge variant="primary" className="w-50">Active</Badge>
 											}
 										</td>
 										<td>

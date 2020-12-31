@@ -6,6 +6,7 @@
 #sidebar-wrapper {
 min-height: 100vh;
 margin-left: -15rem;
+position: relative;
 -webkit-transition: margin .25s ease-out;
 -moz-transition: margin .25s ease-out;
 -o-transition: margin .25s ease-out;
@@ -36,8 +37,38 @@ margin-left: 0;
 th,i,small {
   color :#A9A9A9;
 }
+i{
+  size: 1.5!important;
+}
+table td:last-child,th:last-child{
+  width: 20%;
+}
+.menu {
+  font-size: 16px;
+  font-weight: bold;
+}
 .badge-warning {
   color : white !important;
+}
+.list-group-item:active > i,.list-group-item:focus > i{
+  color:#006CFF !important;
+}
+.list-group-item:active,.list-group-item:focus{
+  border-left:solid #006CFF 3px !important;
+}
+.head-title {
+  font-size: 35;
+  font-weight: regular;
+}
+.footer{
+  position:absolute;
+  bottom:0;
+}
+
+@media (max-width: 1000px) {
+  .badge{
+    width: 100% !important;
+  }
 }
 @media (min-width: 500px) {
 #sidebar-wrapper {
